@@ -1,0 +1,20 @@
+.nav {
+  @include flex-display;
+  width: 415px;
+  justify-content: space-between;
+}
+
+.nav__list {
+  @include flex-display;
+  @include basic-area;
+  width: 249px;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: $white__color;
+}
+
+.nav__item-link {
+  color: $header__link-color;
+}

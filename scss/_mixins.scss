@@ -1,0 +1,17 @@
+@mixin font($family, $size, $weight, $height) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin flex-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin basic-area {
+  margin: 0;
+  padding: 0;
+} 
