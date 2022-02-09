@@ -1,0 +1,140 @@
+.intro {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 153px 0 152px;
+  background: url(../../img/intro-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+
+  &__slogan {
+    @include basic-area;
+    @include font($space-mono, 56px, 700, 1);
+    margin-bottom: 40px;
+    max-width: 500px;
+    letter-spacing: -2px;
+    color: $white__color;
+  }
+
+
+  &__text-wrapper {
+    max-width: 405px;
+    margin-left: 95px;
+    color: $white__color;
+
+    &::before {
+      @include basic-bg-img;
+      content: "";
+      width: 202px;
+      height: 12px;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 353px;
+      background-image: url(../../img/icons/suffix-arrow.svg);
+    }
+
+    &::after {
+      @include basic-bg-img;
+      content: "";
+      width: 447px;
+      height: 138px;
+      display: inline-block;
+      position: absolute;
+      left: 705px;
+      top: 353px;
+      background-image: url(../../img/icons/right-sight-arrow.svg);
+      background-position: center right;
+    }
+  }
+
+  &__description {
+    @include basic-area;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .intro {
+    @include basic-area;
+    padding: 137px 0 217px;
+    background-image: url(../../img/intro-tablet-bg-img.jpg);
+
+    &__container {
+      max-width: 689px;
+
+      &::before {
+        @include basic-bg-img;
+        content: "";
+        width: 447px;
+        height: 138px;
+        display: inline-block;
+        position: absolute;
+        left: -127px;
+        bottom: 39px;
+        background-image: url(../../img/icons/right-sight-arrow.svg);
+        background-position: center right;
+      }
+    }
+
+    &__content {
+      max-width: 573px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__slogan {
+      max-width: 573px;
+      margin-bottom: 24px;
+    }
+
+    &__description {
+      max-width: 573px;
+      margin-bottom: 32px;
+    }
+
+    &__text-wrapper {
+      max-width: 573px;
+      margin: 0 auto;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .intro {
+    @include basic-area;
+    padding: 115px 0 179px;
+    background-image: url(../../img/intro-mobile-bg-img.jpg);
+
+    &--opened {
+      max-height: 603px;
+    }
+
+    &__container {
+      max-width: 351px;
+      text-align: center;
+
+      &::before {
+        left: -312px;
+      }
+    }
+
+    &__slogan {
+      @include font($space-mono, 40px, 700, 1);
+      margin-bottom: 24px;
+      letter-spacing: -1.79 px;
+    }
+
+    &__description {
+      @include basic-area;
+      margin-bottom: 34px;
+      word-spacing: -5px;
+    }
+  }
+}
