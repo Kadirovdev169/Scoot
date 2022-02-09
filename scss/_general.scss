@@ -7,7 +7,7 @@
 body {
   @include basic-area;
   @include font($space-mono, 15px, 700, 25px);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul,

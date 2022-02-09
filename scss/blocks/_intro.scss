@@ -6,7 +6,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
 
   &__slogan {
     @include basic-area;
@@ -111,6 +110,7 @@
     @include basic-area;
     padding: 115px 0 179px;
     background-image: url(../../img/intro-mobile-bg-img.jpg);
+    z-index: -1;
 
     &--opened {
       max-height: 603px;

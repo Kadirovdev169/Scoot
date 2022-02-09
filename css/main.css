@@ -12,7 +12,7 @@ body {
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul,
@@ -154,6 +154,16 @@ a {
   color: #939CAA;
 }
 
+.header__item-link:hover {
+  color: #FCB72B;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+}
+
+.header__link--active {
+  color: #FCB72B;
+}
+
 @media only screen and (max-width: 1150px) {
   .header__container {
     max-width: 729px;
@@ -282,7 +292,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
 }
 
 .intro__slogan {
@@ -391,6 +400,7 @@ a {
     padding: 0;
     padding: 115px 0 179px;
     background-image: url(../../img/intro-mobile-bg-img.jpg);
+    z-index: -1;
   }
   .intro--opened {
     max-height: 603px;
@@ -420,5 +430,15 @@ a {
 
 .main--opened {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.about-intro {
+  background-image: url(../../img/about-intro-bg-img.jpg);
+}
+
+.about-intro__container {
+  margin: 0;
+  padding: 0;
+  padding: 72px 0;
 }
 /*# sourceMappingURL=main.css.map */

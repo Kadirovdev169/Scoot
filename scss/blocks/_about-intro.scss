@@ -1,0 +1,8 @@
+.about-intro {
+  background-image: url(../../img/about-intro-bg-img.jpg);
+
+  &__container {
+    @include basic-area;
+    padding: 72px 0;
+  }
+}

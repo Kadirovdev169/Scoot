@@ -70,10 +70,17 @@
 
   &__item-link {
     color: $header__link-color;
+
+    &:hover {
+      color: $main__button-bg;
+      transition: .2s ease all;
+    }
+  }
+
+  &__link--active {
+    color: $main__button-bg;
   }
 }
-
-
 
 @media only screen and (max-width: $tablet) {
   .header__container {
@@ -106,7 +113,7 @@
       left: 0;
       top: 100%;
 
-        &--opened {
+      &--opened {
         @include flex-display;
         padding: 64px 0 413px 32px;
         flex-direction: column;
