@@ -431,12 +431,44 @@ a {
 }
 
 .about-intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: url(../../img/about-intro-bg-img.jpg);
 }
 
 .about-intro__container {
+  padding: 72px 20px;
+}
+
+.about-intro__title {
   margin: 0;
   padding: 0;
-  padding: 72px 0;
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1150px) {
+  .about-intro {
+    background-image: url(../../img/about-intro-tablet-bg-img.jpg);
+  }
+  .about-intro__container {
+    padding: 72px 97px;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .about-intro {
+    background-image: url(../../img/about-intro-mobile-bg-img.jpg);
+  }
+  .about-intro__container {
+    padding: 72px 32px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
