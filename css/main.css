@@ -162,8 +162,6 @@ a {
 
 @media only screen and (max-width: 729px) {
   .header__container {
-    margin: 0;
-    padding: 0;
     max-width: 351px;
     padding: 22px 32px;
     -webkit-box-pack: center;
@@ -280,7 +278,7 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: 153px 0 152px;
-  background: url(../img/intro-bg-img.jpg);
+  background: url(../../img/intro-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -317,7 +315,7 @@ a {
   position: absolute;
   left: 0;
   top: 353px;
-  background-image: url(../img/icons/suffix-arrow.svg);
+  background-image: url(../../img/icons/suffix-arrow.svg);
 }
 
 .intro__text-wrapper::after {
@@ -331,7 +329,7 @@ a {
   position: absolute;
   left: 705px;
   top: 353px;
-  background-image: url(../img/icons/right-sight-arrow.svg);
+  background-image: url(../../img/icons/right-sight-arrow.svg);
   background-position: center right;
 }
 
@@ -346,7 +344,7 @@ a {
     margin: 0;
     padding: 0;
     padding: 137px 0 217px;
-    background-image: url(../img/intro-tablet-bg-img.jpg);
+    background-image: url(../../img/intro-tablet-bg-img.jpg);
   }
   .intro__container {
     max-width: 689px;
@@ -362,7 +360,7 @@ a {
     position: absolute;
     left: -127px;
     bottom: 39px;
-    background-image: url(../img/icons/right-sight-arrow.svg);
+    background-image: url(../../img/icons/right-sight-arrow.svg);
     background-position: center right;
   }
   .intro__content {
@@ -392,7 +390,7 @@ a {
     margin: 0;
     padding: 0;
     padding: 115px 0 179px;
-    background-image: url(../img/intro-mobile-bg-img.jpg);
+    background-image: url(../../img/intro-mobile-bg-img.jpg);
   }
   .intro--opened {
     max-height: 603px;

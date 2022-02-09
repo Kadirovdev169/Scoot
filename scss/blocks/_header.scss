@@ -84,7 +84,6 @@
 @media only screen and (max-width: $mobile) {
   .header {
     &__container {
-      @include basic-area;
       max-width: 351px;
       padding: 22px 32px;
       justify-content: center;
