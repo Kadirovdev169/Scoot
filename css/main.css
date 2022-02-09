@@ -471,4 +471,125 @@ a {
     text-align: center;
   }
 }
+
+.proccess {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.proccess__container {
+  padding: 160px 20px 200px;
+}
+
+.proccess__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.proccess__list-item {
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+}
+
+.proccess__item-icon {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  position: relative;
+}
+
+.proccess__item-icon::before {
+  content: "";
+  width: 284px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  top: 41px;
+  right: 100%;
+  background-color: #E5ECF4;
+}
+
+.proccess__item-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 27px;
+}
+
+.proccess__item-description {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.proccess__phone-icon {
+  background-image: url(../../img/icons/phone-tap.svg);
+}
+
+.proccess__scooter-icon {
+  background-image: url(../../img/icons/scooter.svg);
+}
+
+.proccess__deliver-icon {
+  background-image: url(../../img/icons/enjoy-ride.svg);
+}
+
+@media only screen and (max-width: 1150px) {
+  .proccess__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .proccess__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 573px;
+    margin-bottom: 40px;
+  }
+  .proccess__item-wrapper {
+    max-width: 398px;
+    margin-left: 79px;
+  }
+  .proccess__item-icon {
+    margin: 0;
+    padding: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    position: relative;
+    z-index: 4;
+  }
+}
 /*# sourceMappingURL=main.css.map */

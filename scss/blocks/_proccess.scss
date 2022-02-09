@@ -1,0 +1,94 @@
+.proccess {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__container {
+    padding: 160px 20px 200px;
+  }
+
+  &__list {
+    @include basic-area;
+    @include flex-display;
+    justify-content: space-between;
+
+    &-item {
+      @include basic-area;
+      max-width: 350px;
+    }
+  }
+
+  &__item {
+    &-icon {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 40px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: $main__button-bg;
+      border-radius: 50%;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 284px;
+        height: 15px;
+        display: inline-block;
+        position: absolute;
+        top: 41px;
+        right: 100%;
+        background-color: $proccess__line-bg;
+      }
+    }
+
+    &-title {
+      @include basic-area;
+      @include font($space-mono, 24px, 700, 28px);
+      margin-bottom: 27px;
+    }
+
+    &-description {
+      @include basic-area;
+      @include font($lexend-deca, 15px, 400, 25px);
+      color: $header__link-color;
+    }
+  }
+
+  &__phone-icon {
+    background-image: url(../../img/icons/phone-tap.svg);
+  }
+
+  &__scooter-icon {
+    background-image: url(../../img/icons/scooter.svg);
+  }
+
+  &__deliver-icon {
+    background-image: url(../../img/icons/enjoy-ride.svg);
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .proccess {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__list-item {
+      @include flex-display;
+      max-width: 573px;
+      margin-bottom: 40px;
+    }
+
+    &__item-wrapper {
+      max-width: 398px;
+      margin-left: 79px;
+    }
+
+    &__item-icon {
+      @include basic-area;
+      transform: rotate(90deg);
+      position: relative;
+      z-index: 4;
+}
+  }
+}
