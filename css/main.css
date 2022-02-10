@@ -12,7 +12,6 @@ body {
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
-  overflow-x: hidden;
 }
 
 ul,
@@ -283,7 +282,6 @@ a {
 }
 
 .intro {
-  max-width: 1440px;
   margin: 0 auto;
   padding: 153px 0 152px;
   background: url(../../img/intro-bg-img.jpg);
@@ -309,6 +307,7 @@ a {
   max-width: 405px;
   margin-left: 95px;
   color: #FFFFFF;
+  position: relative;
 }
 
 .intro__text-wrapper::before {
@@ -320,8 +319,8 @@ a {
   height: 12px;
   display: inline-block;
   position: absolute;
-  left: 0;
-  top: 353px;
+  top: 48px;
+  right: calc(100% + 57px);
   background-image: url(../../img/icons/suffix-arrow.svg);
 }
 
@@ -334,8 +333,8 @@ a {
   height: 138px;
   display: inline-block;
   position: absolute;
-  left: 705px;
-  top: 353px;
+  top: 48px;
+  left: calc(100% + 40px);
   background-image: url(../../img/icons/right-sight-arrow.svg);
   background-position: center right;
 }
@@ -432,7 +431,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  max-width: 1440px;
   margin: 0 auto;
   background-image: url(../../img/about-intro-bg-img.jpg);
 }
@@ -456,6 +454,7 @@ a {
     background-image: url(../../img/about-intro-tablet-bg-img.jpg);
   }
   .about-intro__container {
+    max-width: 729px;
     padding: 72px 97px;
   }
 }

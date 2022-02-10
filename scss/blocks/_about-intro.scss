@@ -1,6 +1,5 @@
 .about-intro {
   @include basic-bg-img;
-  max-width: 1440px;
   margin: 0 auto;
   background-image: url(../../img/about-intro-bg-img.jpg);
   
@@ -20,6 +19,7 @@
     background-image: url(../../img/about-intro-tablet-bg-img.jpg);
 
     &__container {
+      max-width: 729px;
       padding: 72px 97px;
     }
   }

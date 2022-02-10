@@ -7,5 +7,3 @@ burger.addEventListener("click", () => {
   nav.classList.toggle("header__nav--opened");
   link.classList.toggle("header__link--opened");
 })
-
-

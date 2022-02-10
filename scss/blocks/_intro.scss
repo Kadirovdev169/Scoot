@@ -1,12 +1,11 @@
 .intro {
-  max-width: 1440px;
   margin: 0 auto;
   padding: 153px 0 152px;
   background: url(../../img/intro-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
+  
   &__slogan {
     @include basic-area;
     @include font($space-mono, 56px, 700, 1);
@@ -16,11 +15,11 @@
     color: $white__color;
   }
 
-
   &__text-wrapper {
     max-width: 405px;
     margin-left: 95px;
     color: $white__color;
+    position: relative;
 
     &::before {
       @include basic-bg-img;
@@ -29,8 +28,8 @@
       height: 12px;
       display: inline-block;
       position: absolute;
-      left: 0;
-      top: 353px;
+      top: 48px;
+      right: calc(100% + 57px);
       background-image: url(../../img/icons/suffix-arrow.svg);
     }
 
@@ -41,8 +40,8 @@
       height: 138px;
       display: inline-block;
       position: absolute;
-      left: 705px;
-      top: 353px;
+      top: 48px;
+      left: calc(100% + 40px);
       background-image: url(../../img/icons/right-sight-arrow.svg);
       background-position: center right;
     }
