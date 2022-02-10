@@ -476,7 +476,7 @@ a {
 }
 
 .proccess__container {
-  padding: 160px 20px 200px;
+  padding: 296px 20px 200px;
 }
 
 .proccess__list {
@@ -502,26 +502,48 @@ a {
   max-width: 350px;
 }
 
-.proccess__item-icon {
-  width: 96px;
-  height: 96px;
-  margin-bottom: 40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #FCB72B;
-  border-radius: 50%;
+.proccess__list-item {
   position: relative;
 }
 
-.proccess__item-icon::before {
+.proccess__list-item::after {
   content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 96px;
+  height: 96px;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 2;
+}
+
+.proccess__list-item::before {
+  content: "";
+  display: inline-block;
   width: 284px;
   height: 15px;
-  display: inline-block;
-  position: absolute;
-  top: 41px;
-  right: 100%;
   background-color: #E5ECF4;
+  position: absolute;
+  top: calc(-100% + (96px / 2) - (15px / 2));
+  right: 100%;
+}
+
+.proccess__list .proccess__list-phone-tap::after {
+  background-image: url(../../img/icons/phone-tap.svg);
+}
+
+.proccess__list .proccess__list-scooter::after {
+  background-image: url(../../img/icons/scooter.svg);
+}
+
+.proccess__list .proccess__list-delivery::after {
+  background-image: url(../../img/icons/enjoy-ride.svg);
 }
 
 .proccess__item-title {
@@ -544,18 +566,6 @@ a {
   color: #939CAA;
 }
 
-.proccess__phone-icon {
-  background-image: url(../../img/icons/phone-tap.svg);
-}
-
-.proccess__scooter-icon {
-  background-image: url(../../img/icons/scooter.svg);
-}
-
-.proccess__deliver-icon {
-  background-image: url(../../img/icons/enjoy-ride.svg);
-}
-
 @media only screen and (max-width: 1150px) {
   .proccess__list {
     -webkit-box-orient: vertical;
@@ -575,32 +585,6 @@ a {
             justify-content: center;
     max-width: 573px;
     margin-bottom: 40px;
-  }
-  .proccess__item-wrapper {
-    max-width: 398px;
-    margin-left: 79px;
-  }
-  .proccess__item-icon {
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-  .proccess__item-icon::before {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    position: absolute;
-    top: -100%;
-    left: -96px;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    z-index: -1;
   }
 }
 /*# sourceMappingURL=main.css.map */

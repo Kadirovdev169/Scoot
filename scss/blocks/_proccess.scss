@@ -4,7 +4,7 @@
   overflow: hidden;
 
   &__container {
-    padding: 160px 20px 200px;
+    padding: 296px 20px 200px;
   }
 
   &__list {
@@ -18,29 +18,51 @@
     }
   }
 
-  &__item {
-    &-icon {
-      width: 96px;
-      height: 96px;
-      margin-bottom: 40px;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-color: $main__button-bg;
-      border-radius: 50%;
+  &__list {
+    &-item {
       position: relative;
+
+      &::after {
+        content: "";
+        display: flex;
+        width: 96px;
+        height: 96px;
+        background-color: $main__button-bg;
+        border-radius: 50%;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 2;
+      }
 
       &::before {
         content: "";
-        width: 284px;
-        height: 15px;
-        display: inline-block;
-        position: absolute;
-        top: 41px;
-        right: 100%;
-        background-color: $proccess__line-bg;
+          display: inline-block;
+          width: 284px;
+          height: 15px;
+          background-color: $header__link--mobile-color;
+          position: absolute;
+          top: calc(-100% + (96px / 2) - (15px / 2));
+          right: 100%;
       }
     }
 
+    .proccess__list-phone-tap::after {
+        background-image: url(../../img/icons/phone-tap.svg);
+    }
+
+    .proccess__list-scooter::after {
+      background-image: url(../../img/icons/scooter.svg);
+    }
+
+    .proccess__list-delivery::after {
+      background-image: url(../../img/icons/enjoy-ride.svg);
+    }
+  }
+
+  &__item {
     &-title {
       @include basic-area;
       @include font($space-mono, 24px, 700, 28px);
@@ -52,18 +74,6 @@
       @include font($lexend-deca, 15px, 400, 25px);
       color: $header__link-color;
     }
-  }
-
-  &__phone-icon {
-    background-image: url(../../img/icons/phone-tap.svg);
-  }
-
-  &__scooter-icon {
-    background-image: url(../../img/icons/scooter.svg);
-  }
-
-  &__deliver-icon {
-    background-image: url(../../img/icons/enjoy-ride.svg);
   }
 }
 
@@ -77,25 +87,6 @@
       @include flex-display;
       max-width: 573px;
       margin-bottom: 40px;
-    }
-
-    &__item-wrapper {
-      max-width: 398px;
-      margin-left: 79px;
-    }
-
-    &__item-icon {
-      @include basic-area;
-      position: relative;
-
-      &::before {
-        @include flex-display;
-        position: absolute;
-        top: -100%;
-        left: -96px;
-        transform: rotate(90deg);
-        z-index: -1;
-      }
     }
   }
 }
