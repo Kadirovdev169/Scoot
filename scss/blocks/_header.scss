@@ -94,12 +94,25 @@
         top: 100%;
         left: 0;
 
+        &::after {
+          content: "";
+          width: 100em;
+          height: calc(100vh - 64px);
+          background-color: rgba(47, 59, 89, .75);
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+        }
+
         & .header__nav-list {
           @include basic-area;
           @include flex-display;
           flex-direction: column;
           align-items: flex-start;
           padding: 64px 135px 0 32px;
+          z-index: 1;
         }
 
         & .nav__list-item {
@@ -109,6 +122,10 @@
           &:last-child {
             margin-bottom: 0;
           }
+        }
+
+        & .header__item-link {
+          color: $header__link--mobile-color;
         }
       }
     }
