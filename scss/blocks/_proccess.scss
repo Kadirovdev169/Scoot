@@ -4,61 +4,54 @@
   overflow: hidden;
 
   &__container {
-    padding: 296px 20px 200px;
+    padding: 160px 20px 200px;
   }
 
   &__list {
     @include basic-area;
     @include flex-display;
     justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: flex;
+      width: 974px;
+      height: 15px;
+      background-color: $header__link--mobile-color;
+      position: absolute;
+      top: calc(96px / 2);
+      right: 300px;
+      z-index: -1;
+    }
+
+    &-phone-tap::before {
+      background-image: url(../../img/icons/phone-tap.svg);
+    }
+
+    &-scooter::before {
+      background-image: url(../../img/icons/scooter.svg);
+    }
+
+    &-delivery::before {
+      background-image: url(../../img/icons/enjoy-ride.svg);
+    }
 
     &-item {
       @include basic-area;
       max-width: 350px;
-    }
-  }
-
-  &__list {
-    &-item {
-      position: relative;
-
-      &::after {
-        content: "";
-        display: flex;
-        width: 96px;
-        height: 96px;
-        background-color: $main__button-bg;
-        border-radius: 50%;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        background-repeat: no-repeat;
-        background-position: center center;
-        z-index: 2;
-      }
 
       &::before {
         content: "";
-          display: inline-block;
-          width: 284px;
-          height: 15px;
-          background-color: $header__link--mobile-color;
-          position: absolute;
-          top: calc(-100% + (96px / 2) - (15px / 2));
-          right: 100%;
+        width: 96px;
+        height: 96px;
+        display: block;
+        margin-bottom: 40px;
+        background-color: $main__button-bg;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
       }
-    }
-
-    .proccess__list-phone-tap::after {
-        background-image: url(../../img/icons/phone-tap.svg);
-    }
-
-    .proccess__list-scooter::after {
-      background-image: url(../../img/icons/scooter.svg);
-    }
-
-    .proccess__list-delivery::after {
-      background-image: url(../../img/icons/enjoy-ride.svg);
     }
   }
 
@@ -79,14 +72,65 @@
 
 @media only screen and (max-width: $tablet) {
   .proccess {
-    &__list {
-      flex-direction: column;
+    &__container {
+      padding-top: 122px;
     }
 
-    &__list-item {
-      @include flex-display;
-      max-width: 573px;
-      margin-bottom: 40px;
+    &__list {
+      flex-direction: column;
+
+      // This case margin right is not true in my opinion
+      &::before {
+        transform: rotate(90deg);
+        position: static;
+        margin-right: 56vh;
+        margin-bottom: 96px;
+      }
+
+      &-item {
+        @include flex-display;
+        max-width: 573px;
+        margin-bottom: 40px;
+
+        &::before {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__text-wrapper {
+      max-width: 398px;
+      margin-left: 79px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .proccess {
+    &__container {
+      padding: 120px 0;
+    }
+
+    &__list {
+      &-item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 48px;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &__item-title { 
+      font-size: 20px;
+    }
+
+    &__text-wrapper {
+      @include basic-area;
+      margin-top: 24px;
+      text-align: center;
     }
   }
 }
