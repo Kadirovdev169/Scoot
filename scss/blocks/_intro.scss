@@ -110,7 +110,6 @@
     @include basic-area;
     padding: 115px 0 179px;
     background-image: url(../../img/intro-mobile-bg-img.jpg);
-    z-index: -1;
 
     &--opened {
       max-height: 603px;
@@ -128,7 +127,7 @@
     &__slogan {
       @include font($space-mono, 40px, 700, 1);
       margin-bottom: 24px;
-      letter-spacing: -1.79 px;
+      letter-spacing: -2px;
     }
   }
 }

@@ -7,6 +7,7 @@
 body {
   @include basic-area;
   @include font($space-mono, 15px, 700, 25px);
+  margin-top: 97px;
 }
 
 ul,
@@ -23,3 +24,8 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (max-width: $mobile) {
+  body {
+    margin-top: 64px;
+  }
+}

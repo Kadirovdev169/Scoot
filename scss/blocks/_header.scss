@@ -1,4 +1,11 @@
 .header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+
   &__container {
     @include flex-display;
     padding: 22px 20px;
@@ -72,6 +79,7 @@
 @media only screen and (max-width: $mobile) {
   .header {
     &__container {
+      max-width: 375px;
       padding: 22px 32px;
     }
 
@@ -87,23 +95,23 @@
         @include flex-display;
         @include basic-area;
         align-items: flex-start;
+        justify-content: flex-start;
         height: calc(100vh - 64px);
-        max-width: 256px;
-        background-color: $toggle__navbar-bg;
+        width: 100%;
+        background-color: rgba(47, 59, 89, .75);
         position: absolute;
         top: 100%;
         left: 0;
+        z-index: 1;
 
         &::after {
           content: "";
-          width: 100em;
+          width: 256px;
           height: calc(100vh - 64px);
-          background-color: rgba(47, 59, 89, .75);
           position: absolute;
           top: 0;
           left: 0;
-          bottom: 0;
-          right: 0;
+          background-color: $toggle__navbar-bg;
         }
 
         & .header__nav-list {
@@ -126,6 +134,10 @@
 
         & .header__item-link {
           color: $header__link--mobile-color;
+        }
+
+        & .header__link--active {
+          color: $main__button-bg;
         }
       }
     }
