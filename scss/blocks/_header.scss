@@ -79,6 +79,7 @@
 @media only screen and (max-width: $mobile) {
   .header {
     &__container {
+      max-width: 688px;
       padding: 22px 32px;
     }
 
@@ -161,6 +162,7 @@
         top: calc(100vh - (24px + 53px));
         position: absolute;
         display: inline-block;
+        letter-spacing: -2px;
       }
     }
   }

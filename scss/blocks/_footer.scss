@@ -30,14 +30,15 @@
 
 @media only screen and (max-width: $tablet) {
   .footer__container {
-    max-width: 732px;
+    max-width: 728px;
   }
 }
 
 @media only screen and (max-width: $mobile) {
   .footer {
     &__container {
-      padding: 64px 0 88px 0;
+      max-width: 688px;
+      padding: 64px 20px 88px;
       flex-direction: column;
     }
 

@@ -16,3 +16,21 @@
     top: 268px;
   }
 }
+
+@media only screen and (max-width: $tablet) {
+  .about-benefits {
+    &__container {
+      max-width: 728px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .about-benefits {
+    &__container {
+      max-width: 688px;
+    }
+
+    
+  }
+}

@@ -1,4 +1,6 @@
 .faqs {
+  display: none;
+
   &__container {
     padding: 120px 20px 160px;
   }
@@ -76,10 +78,6 @@
       top: 42px;
       right: 42px;
       cursor: pointer;
-
-      &:active {
-        background-color: red;
-      }
     }
   }
 }

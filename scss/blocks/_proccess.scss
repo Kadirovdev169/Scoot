@@ -74,7 +74,7 @@
 @media only screen and (max-width: $tablet) {
   .proccess {
     &__container {
-      max-width: 688px;
+      max-width: 728px;
       padding-top: 122px;
       padding-bottom: 145px;
     }
@@ -86,7 +86,7 @@
         transform: rotate(90deg);
         position: absolute;
         top: -96px;
-        left: -405px;
+        left: -385px;
       }
 
       &-item {
@@ -110,8 +110,8 @@
 @media only screen and (max-width: $mobile) {
   .proccess {
     &__container {
-      max-width: 351px;
-      padding: 120px 0;
+      max-width: 688px;
+      padding: 120px 20px;
     }
 
     &__list {
