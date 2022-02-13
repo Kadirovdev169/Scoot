@@ -1212,4 +1212,21 @@ a {
 .faqs__item-button:active {
   background-color: red;
 }
+
+.about-benefits__container {
+  padding: 120px 20px;
+}
+
+.about-benefits__list-item {
+  margin-bottom: 120px;
+}
+
+.about-benefits__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.about-benefits__list-item--right::after {
+  background-image: url(../../img/icons/about-benefits__arrow-left.svg);
+  top: 268px;
+}
 /*# sourceMappingURL=main.css.map */

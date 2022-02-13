@@ -1,0 +1,18 @@
+.about-benefits {
+  &__container {
+    padding: 120px 20px;
+  }
+
+  &__list-item {
+    margin-bottom: 120px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-item--right::after {
+    background-image: url(../../img/icons/about-benefits__arrow-left.svg);
+    top: 268px;
+  }
+}
