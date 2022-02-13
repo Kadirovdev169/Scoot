@@ -84,9 +84,9 @@
     &-title {
       @include basic-area;
       @include font($space-mono, 48px, 700, 48px);
+      letter-spacing: -2px;
       margin-bottom: 24px;
       color: $benefits__title-color;
-      letter-spacing: -2px;
     }
 
     &-descritpion {

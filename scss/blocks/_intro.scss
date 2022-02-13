@@ -1,17 +1,28 @@
 .intro {
   margin: 0 auto;
   padding: 153px 0 152px;
-  background: url(../../img/intro-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+
+    background-image: url("../img/intro-bg-retina-img.jpg");
+  }
+
+  background: url(../../img/intro-bg-img.jpg);
+  
   &__slogan {
     @include basic-area;
     @include font($space-mono, 56px, 700, 1);
+    letter-spacing: -2.5px;
     margin-bottom: 40px;
     max-width: 500px;
-    letter-spacing: -2px;
     color: $white__color;
   }
 
@@ -58,6 +69,17 @@
   .intro {
     @include basic-area;
     padding: 137px 0 217px;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+      background-image: url("../img/intro-tablet-retina-img.jpg");
+    }
+
     background-image: url(../../img/intro-tablet-bg-img.jpg);
 
     &__container {
@@ -109,6 +131,17 @@
   .intro {
     @include basic-area;
     padding: 115px 0 179px;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+      background-image: url("../img/intro-retina-mobile-img.jpg");
+    }
+
     background-image: url(../../img/intro-mobile-bg-img.jpg);
 
     &--opened {
@@ -127,7 +160,6 @@
     &__slogan {
       @include font($space-mono, 40px, 700, 1);
       margin-bottom: 24px;
-      letter-spacing: -2px;
     }
   }
 }

@@ -59,6 +59,7 @@
     &-title {
       @include basic-area;
       @include font($space-mono, 24px, 700, 28px);
+      letter-spacing: -1px;
       margin-bottom: 27px;
     }
 

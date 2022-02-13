@@ -1,0 +1,95 @@
+.cta {
+  background-color: $benefits__title-color;
+
+  &__container {
+    @include flex-display;
+    @include basic-bg-img;
+    box-sizing: content-box;
+    max-width: 1110px;
+    padding: 102px 165px;
+    justify-content: space-between;
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+      background-image: url("../img/cta-bg-img2@.jpg");
+    }
+
+    background: url(../../img/cta__bg-img.jpg); 
+  }
+
+  &__description {
+    @include font($space-mono, 48px, 700, 48px);
+    @include basic-area;
+    letter-spacing: -2px;
+    max-width: 415px;
+    color: $white__color;
+  }
+
+  &__link-wrapper {
+    @include flex-display;
+    width: 359px;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .cta {
+    &__container {
+      @include basic-area;
+      box-sizing: border-box;
+      max-width: 497px;
+      margin: 0 auto;
+      padding: 88px 0;
+      flex-direction: column;
+      text-align: center;
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+
+        background-image: url("../img/cta-bg-tablet-img@2x.jpg");
+      }
+
+      background: url(../../img/cta__bg-tablet-img.jpg);
+    }
+
+    &__link-wrapper {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .cta {
+    &__container {
+      @include basic-area;
+      margin: 0 auto;
+      padding: 88px 0;
+      max-width: 351px;
+
+      @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+
+        background-image: url("../img/cta-bg-mobile-img2@.jpg");
+      }
+
+      background: url(../../img/cta-bg-mobile-img.jpg);
+    }
+
+    &__description {
+      @include font($space-mono, 32px, 700, 32px)
+    }
+  }
+}
