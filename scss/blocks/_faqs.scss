@@ -1,0 +1,85 @@
+.faqs {
+  &__container {
+    padding: 120px 20px 160px;
+  }
+
+  &__title {
+    @include basic-area;
+    @include font($space-mono, 48px, 700, 48px);
+    margin-bottom: 64px;
+    color: $benefits__title-color;
+    letter-spacing: -2px;
+    text-align: center;
+  }
+
+  &__box {
+    @include flex-display;
+    margin-bottom: 64px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-heading {
+      @include basic-area;
+      @include font($space-mono, 40px, 700, 48px);
+      color: $benefits__title-color;
+    }
+  }
+
+  &__list {
+    @include basic-area;
+    
+    &-item {
+      width: 730px;
+      margin-bottom: 16px;
+      padding: 32px 40px;
+      background-color: $faqs__item-bg-color;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__item {
+    &-title {
+      @include basic-area;
+      @include font($space-mono, 24px, 700, 28px);
+      letter-spacing: -1px;
+    }
+
+    &-toggle-text {
+      @include basic-area;
+      @include font($lexend-deca, 15px, 400, 25px);
+      display: none;
+      margin-top: 24px;
+      color: $benefits__title-color;
+    }
+
+    &--opened {
+      display: flex
+    }
+
+    &-button {
+      @include basic-area;
+      @include basic-bg-img;
+      width: 16px;
+      height: 8px;
+      border: none;
+      background-image: url(../../img/icons/arrow-bottom.svg);
+      background-color: transparent;
+      position: absolute;
+      top: 42px;
+      right: 42px;
+      cursor: pointer;
+
+      &:active {
+        background-color: red;
+      }
+    }
+  }
+}

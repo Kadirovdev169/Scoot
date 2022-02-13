@@ -1096,4 +1096,120 @@ a {
     margin-bottom: 85px;
   }
 }
+
+.faqs__container {
+  padding: 120px 20px 160px;
+}
+
+.faqs__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 64px;
+  color: #495567;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.faqs__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 64px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.faqs__box:last-child {
+  margin-bottom: 0;
+}
+
+.faqs__box-heading {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #495567;
+}
+
+.faqs__list {
+  margin: 0;
+  padding: 0;
+}
+
+.faqs__list-item {
+  width: 730px;
+  margin-bottom: 16px;
+  padding: 32px 40px;
+  background-color: #F2F5F9;
+  position: relative;
+}
+
+.faqs__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.faqs__item-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1px;
+}
+
+.faqs__item-toggle-text {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  display: none;
+  margin-top: 24px;
+  color: #495567;
+}
+
+.faqs__item--opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faqs__item-button {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 16px;
+  height: 8px;
+  border: none;
+  background-image: url(../../img/icons/arrow-bottom.svg);
+  background-color: transparent;
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  cursor: pointer;
+}
+
+.faqs__item-button:active {
+  background-color: red;
+}
 /*# sourceMappingURL=main.css.map */
