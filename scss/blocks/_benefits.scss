@@ -64,6 +64,11 @@
       }
     }
 
+    &__item-picture {
+        width: 445px;
+        height: 445px;
+    }
+
     &-item:nth-child(2n) {
       flex-direction: row-reverse;
       justify-content: space-between;

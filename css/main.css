@@ -822,6 +822,11 @@ a {
   margin-bottom: 0;
 }
 
+.benefits__list__item-picture {
+  width: 445px;
+  height: 445px;
+}
+
 .benefits__list-item:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1427,6 +1432,8 @@ a {
 .our-values__img {
   margin: 0;
   padding: 0;
+  width: 240px;
+  height: 240px;
   margin: 0 auto;
   border-radius: 50%;
 }
