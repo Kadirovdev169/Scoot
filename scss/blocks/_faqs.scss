@@ -125,6 +125,7 @@
     &__item-title {
       @include font($space-mono, 18px, 700, 24px);
       letter-spacing: -1px;
+      margin-right: 32px;
     }
   }
 }
