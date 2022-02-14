@@ -380,10 +380,10 @@ a {
 .intro {
   margin: 0 auto;
   padding: 153px 0 152px;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   background: url(../../img/intro-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -586,7 +586,6 @@ a {
 .proccess {
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .proccess__container {
@@ -750,7 +749,6 @@ a {
 .benefits {
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .benefits__container {
@@ -871,6 +869,9 @@ a {
 }
 
 @media only screen and (max-width: 1150px) {
+  .benefits {
+    overflow: hidden;
+  }
   .benefits__container {
     max-width: 728px;
     padding-bottom: 104px;
@@ -927,6 +928,9 @@ a {
 }
 
 @media only screen and (max-width: 729px) {
+  .benefits {
+    overflow: hidden;
+  }
   .benefits__container {
     max-width: 688px;
   }

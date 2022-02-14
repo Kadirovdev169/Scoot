@@ -1,7 +1,6 @@
 .benefits {
   max-width: 1440px;
   margin: 0 auto;
-  overflow: hidden;
 
 
   &__container {
@@ -104,6 +103,8 @@
 
 @media only screen and (max-width: $tablet) {
   .benefits {
+    overflow: hidden;
+
     &__container {
       max-width: 728px;
       padding-bottom: 104px;
@@ -169,6 +170,8 @@
 
 @media only screen and (max-width: $mobile) {
   .benefits {
+    overflow: hidden;
+
     &__container {
       max-width: 688px;
     }
