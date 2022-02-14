@@ -62,7 +62,19 @@
     }
 
     &__link-wrapper {
+      max-width: 256px;
+      margin: 0 auto;
       margin-top: 40px;
+    }
+
+    &__app-store {
+      width: 113px;
+      height: 40px;
+    }
+
+    &__google-play {
+      width: 130px;
+      height: 40px;
     }
   }
 }

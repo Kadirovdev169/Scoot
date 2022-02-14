@@ -879,6 +879,10 @@ a {
   .benefits__item-title, .benefits__item-descritpion {
     margin-bottom: 32px;
   }
+  .benefits__list-item {
+    max-width: 311px;
+    margin: 0 auto 120px;
+  }
   .benefits__list-item--right::before, .benefits__list-item--left::before, .benefits__list-item--top::before {
     display: none;
   }
@@ -981,7 +985,17 @@ a {
 
 @media only screen and (max-width: 1150px) {
   .cta__link-wrapper {
+    max-width: 256px;
+    margin: 0 auto;
     margin-top: 40px;
+  }
+  .cta__app-store {
+    width: 113px;
+    height: 40px;
+  }
+  .cta__google-play {
+    width: 130px;
+    height: 40px;
   }
 }
 
@@ -1100,10 +1114,6 @@ a {
   }
 }
 
-.faqs {
-  display: none;
-}
-
 .faqs__container {
   padding: 120px 20px 160px;
 }
@@ -1216,6 +1226,50 @@ a {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1150px) {
+  .faqs__container {
+    max-width: 729px;
+    margin: 0 auto;
+    padding: 120px 20px;
+  }
+  .faqs__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .faqs__box-heading {
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .faqs__list-item {
+    width: 689px;
+    margin-bottom: 24px;
+  }
+  .faqs__list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .faqs__container {
+    max-width: 350px;
+  }
+  .faqs__box {
+    margin-bottom: 48px;
+  }
+  .faqs__list-item {
+    width: 311px;
+  }
+  .faqs__item-title {
+    font-family: "Space Mono", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
+}
+
 .about-benefits__container {
   padding: 120px 20px;
 }
@@ -1242,6 +1296,129 @@ a {
 @media only screen and (max-width: 729px) {
   .about-benefits__container {
     max-width: 688px;
+  }
+  .about-benefits__list-item--right::after {
+    top: 133px;
+  }
+  .about-benefits__list-item--left::after {
+    left: calc(-740px + 311px);
+  }
+}
+
+.our-values__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 105px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.our-values__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.our-values__item {
+  max-width: 350px;
+}
+
+.our-values__item-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 32px;
+}
+
+.our-values__item-description {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 27px;
+  color: #939CAA;
+}
+
+.our-values__img {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.our-values__item-number {
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1px;
+  width: 96px;
+  height: 96px;
+  margin-top: -40px;
+  display: inline-block;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  padding: 34px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .our-values__cotnaienr {
+    max-width: 728px;
+  }
+  .our-values__title {
+    margin-bottom: 105px;
+  }
+  .our-values__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-values__item {
+    max-width: 457px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+  .our-values__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .our-values__container {
+    max-width: 350px;
+  }
+  .our-values__title {
+    font-family: "Space Mono", "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 46px;
+  }
+  .our-values__item-title {
+    margin-top: 16px;
   }
 }
 /*# sourceMappingURL=main.css.map */

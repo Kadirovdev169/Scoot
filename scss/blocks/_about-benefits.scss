@@ -31,6 +31,12 @@
       max-width: 688px;
     }
 
-    
-  }
+    &__list-item--right::after {
+      top: 133px;
+    }
+
+    &__list-item--left::after {
+      left: calc(-740px + 311px);
+    }
+  } 
 }

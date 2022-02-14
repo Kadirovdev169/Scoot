@@ -187,6 +187,9 @@
 
     &__list {
       &-item {
+        max-width: 311px;
+        margin: 0 auto 120px;
+
         &--right::before,
         &--left::before,
         &--top::before {
@@ -195,6 +198,7 @@
 
         &--right::after {
           top: 173px;
+          // left: 32px;
         }
 
         &--left::after {
