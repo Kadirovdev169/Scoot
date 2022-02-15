@@ -10,10 +10,9 @@ body {
   padding: 0;
   font-family: "Space Mono", "Arial", sans-serif;
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 25px;
   margin-top: 97px;
-  overflow-x: hidden;
 }
 
 ul,
@@ -445,7 +444,7 @@ a {
 }
 
 .main-button {
-  padding: 11px 49px;
+  padding: 14px 49px;
   color: #FFFFFF;
   background-color: #FCB72B;
   border: 3px solid transparent;
@@ -1325,6 +1324,12 @@ a {
 
 .faqs__list-item:hover {
   background-color: #FFF4DF;
+}
+
+.faqs__button--opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .faqs__item-title {
