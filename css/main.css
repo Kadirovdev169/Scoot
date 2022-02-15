@@ -1059,7 +1059,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url(../../img/cta__bg-img.jpg);
+  background: url(../../img/cta-bg-img.jpg);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1110,7 +1110,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background: url(../../img/cta__bg-tablet-img.jpg);
+    background: url(../../img/cta-bg-tablet-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1119,7 +1119,7 @@ a {
 
 @media only screen and (max-width: 1150px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1150px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1150px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1150px) and (min-resolution: 192dpi), only screen and (max-width: 1150px) and (min-resolution: 2dppx) {
   .cta__container {
-    background-image: url("../img/cta-bg-tablet-img@2x.jpg");
+    background-image: url("../img/cta-bg-tablet-img2@.jpg");
   }
 }
 

@@ -19,7 +19,7 @@
       background-image: url("../img/cta-bg-img2@.jpg");
     }
 
-    background: url(../../img/cta__bg-img.jpg); 
+    background: url(../../img/cta-bg-img.jpg); 
   }
 
   &__description {
@@ -55,10 +55,10 @@
       only screen and (min-resolution: 192dpi),
       only screen and (min-resolution: 2dppx) {
 
-        background-image: url("../img/cta-bg-tablet-img@2x.jpg");
+        background-image: url("../img/cta-bg-tablet-img2@.jpg");
       }
 
-      background: url(../../img/cta__bg-tablet-img.jpg);
+      background: url(../../img/cta-bg-tablet-img.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
