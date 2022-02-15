@@ -221,6 +221,7 @@ a {
   left: 32px;
   border: none;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 .header__burger::before, .header__burger::after, .header__burger-inner {
