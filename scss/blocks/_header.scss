@@ -2,31 +2,45 @@
 
 @keyframes toggle-navbar {
   0% {
-    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  25% {
+    transform: translate(-75%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
   }
 
   100% {
-    opacity: 1;
+    transform: translateX(0);
   }
 }
 
 @keyframes toggle-background {
   0% {
-    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  25% {
+    transform: translate(-75%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
   }
 
   100% {
-    opacity: 1;
-  }
-}
-
-@keyframes toggle-text {
-  0% {
-    font-size: 0;
-  }
-
-  100% {
-    font-size: 100%;
+    transform: translateX(0);
   }
 }
 
@@ -40,12 +54,16 @@
 
   &__container {
     @include flex-display;
+    justify-content: space-between;
     padding: 22px 20px;
-    position: relative;
   }
 
   &__nav {
-    margin-left: 58px;
+    @include flex-display;
+  }
+
+  &__link {
+    margin-left: 58px
   }
 
   &__burger {
@@ -96,10 +114,6 @@
       transform: translate(-50%, -50%) rotate(-45deg);
     }
   }
-
-  &__link {
-    margin-left: auto;
-  }
 }
 
 @media only screen and (max-width: $tablet) {
@@ -113,6 +127,7 @@
     &__container {
       max-width: 688px;
       padding: 22px 32px;
+      justify-content: center;
     }
 
     &__logo-img {
@@ -122,7 +137,7 @@
 
     &__nav {
       display: none;
-      animation: toggle-background 1.2s ease;
+      animation: toggle-background .7s linear;
 
       &--opened {
         @include flex-display;
@@ -145,8 +160,7 @@
           top: 0;
           left: 0;
           background-color: $toggle__navbar-bg;
-          animation: toggle-navbar 1.5s ease;
-
+          animation: toggle-navbar .7s linear;
         }
 
         & .header__nav-list {
@@ -193,9 +207,10 @@
       width: 192px;
 
       &--opened {
-        left: 32px;
-        top: calc(100vh - (24px + 53px));
+        margin-left: 0;
         position: absolute;
+        bottom: 24px;
+        left: 32px;
         display: inline-block;
         letter-spacing: -2px;
       }
