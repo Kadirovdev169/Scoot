@@ -5,12 +5,6 @@ const button = document.querySelector(".faqs__item-button-active");
 const item = document.querySelector(".faqs__list-item-active")
 const text = document.querySelector(".faqs__item-toggle-text-active");
 
-// burger.addEventListener("click", () => {
-//   burger.classList.toggle("header__burger--opened");
-//   nav.classList.toggle("header__nav--opened");
-//   link.classList.toggle("header__link--opened");
-// })
-
 burger.addEventListener("click", () => {
   burger.classList.toggle("header__burger--opened");
 
@@ -30,10 +24,10 @@ nav.addEventListener("animationend", (evt) => {
   }
 })
 
-item.addEventListener("click", () => {
-  text.classList.toggle("faqs__item--opened")
+button.addEventListener("click", () => {
+  text.classList.toggle("faqs__button--opened")
 })
 
-button.addEventListener("click", () => {
+item.addEventListener("click", () => {
   text.classList.toggle("faqs__item--opened")
 })

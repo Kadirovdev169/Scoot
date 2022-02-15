@@ -1,5 +1,5 @@
 .benefits {
-  overflow: hidden;
+  overflow-x: hidden;
 
   &__container {
     padding-bottom: 329px;
@@ -21,7 +21,7 @@
         right: (-445px - 64px);
         top: 0;
         display: inline-block;
-        background-color: $header__link--mobile-color;
+        background-color: $toggle-link-color;
         border-radius: 50%;
       }
 
@@ -43,7 +43,7 @@
         left: (-445px - 64px);
         top: 0;
         display: inline-block;
-        background-color: $header__link--mobile-color;
+        background-color: $toggle-link-color;
         border-radius: 50%;
       }
 
@@ -60,19 +60,15 @@
       &:last-child {
         margin-bottom: 0;
       }
-    }
 
-    &__item-picture {
-        width: 445px;
-        height: 445px;
-    }
-
-    &-item:nth-child(2n) {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-
-      & .benefits__item-wrapper {
-        margin-right: 0;
+      &-picture {
+          width: 445px;
+          height: 445px;
+      }
+      
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
       }
     }
   }
@@ -83,19 +79,23 @@
       margin-right: auto;
     }
 
+    &-left-wrapper {
+      margin-right: 0;
+    }
+
     &-title {
       @include basic-area;
       @include font($space-mono, 48px, 700, 48px);
-      letter-spacing: -2px;
       margin-bottom: 24px;
-      color: $benefits__title-color;
+      letter-spacing: -2px;
+      color: $benefit-heading;
     }
 
     &-descritpion {
       @include basic-area;
       @include font($lexend-deca, 15px, 400, 25px);
       margin-bottom: 40px;
-      color: $header__link-color;
+      color: $header-link-color;
     }
 
     &-picture {
@@ -145,17 +145,13 @@
 
       &:nth-child(2n) {
         margin-bottom: 128px;
-        flex-direction: column-reverse;
-
-        & .benefits__item-wrapper {
-          margin: 0 auto;
-          margin-top: 64px;
-        }
+        flex-direction: column-reverse; 
       }
     }
 
     &__item {
       &-wrapper {
+        max-width: 573px;
         margin: 0 auto;
         margin-top: 64px;
       }
@@ -176,7 +172,7 @@
     overflow: hidden;
 
     &__container {
-      max-width: 688px;
+      max-width: 350px;
     }
 
     &__item {
@@ -193,7 +189,6 @@
 
     &__list {
       &-item {
-        max-width: 311px;
         margin: 0 auto 120px;
 
         &--right::before,
@@ -204,7 +199,6 @@
 
         &--right::after {
           top: 173px;
-          // left: 32px;
         }
 
         &--left::after {

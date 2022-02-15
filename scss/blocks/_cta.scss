@@ -1,5 +1,5 @@
 .cta {
-  background-color: $benefits__title-color;
+  background-color: $benefit-heading;
 
   &__container {
     @include flex-display;
@@ -27,7 +27,7 @@
     @include basic-area;
     letter-spacing: -2px;
     max-width: 415px;
-    color: $white__color;
+    color: $white;
   }
 
   &__link-wrapper {
@@ -42,7 +42,7 @@
     &__container {
       @include basic-area;
       box-sizing: border-box;
-      max-width: 497px;
+      max-width: 728px;
       margin: 0 auto;
       padding: 88px 0;
       flex-direction: column;
@@ -59,6 +59,9 @@
       }
 
       background: url(../../img/cta__bg-tablet-img.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
     }
 
     &__link-wrapper {

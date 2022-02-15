@@ -23,13 +23,13 @@
     letter-spacing: -2.5px;
     margin-bottom: 40px;
     max-width: 500px;
-    color: $white__color;
+    color: $white;
   }
 
   &__text-wrapper {
     max-width: 405px;
     margin-left: 95px;
-    color: $white__color;
+    color: $white;
     position: relative;
 
     &::before {
@@ -83,7 +83,7 @@
     background-image: url(../../img/intro-tablet-bg-img.jpg);
 
     &__container {
-      max-width: 689px;
+      max-width: 613px;
 
       &::before {
         @include basic-bg-img;
@@ -143,10 +143,6 @@
     }
 
     background-image: url(../../img/intro-mobile-bg-img.jpg);
-
-    &--opened {
-      max-height: 603px;
-    }
 
     &__container {
       max-width: 351px;

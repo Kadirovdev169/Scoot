@@ -28,7 +28,7 @@
       @include basic-area;
       @include font($lexend-deca, 15px, 400, 25px);
       margin-top: 27px;
-      color: $header__link-color;
+      color: $header-link-color;
     }
   }
 
@@ -47,7 +47,7 @@
     height: 96px;
     margin-top: -40px;
     display: inline-block;
-    background-color: $main__button-bg;
+    background-color: $button-color;
     border-radius: 50%;
     padding: 34px;
   }

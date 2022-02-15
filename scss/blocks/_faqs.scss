@@ -7,7 +7,7 @@
     @include basic-area;
     @include font($space-mono, 48px, 700, 48px);
     margin-bottom: 64px;
-    color: $benefits__title-color;
+    color: $benefit-heading;
     letter-spacing: -2px;
     text-align: center;
   }
@@ -25,7 +25,7 @@
     &-heading {
       @include basic-area;
       @include font($space-mono, 40px, 700, 48px);
-      color: $benefits__title-color;
+      color: $benefit-heading;
     }
   }
 
@@ -36,7 +36,7 @@
       width: 730px;
       margin-bottom: 16px;
       padding: 32px 40px;
-      background-color: $faqs__item-bg-color;
+      background-color: $faqs-item-bg;
       position: relative;
       transition: .5s ease all; 
       cursor: pointer;
@@ -46,9 +46,13 @@
       }
 
       &:hover {
-        background-color: $faqs__item-hover-bg-color
+        background-color: $faqs-item-hover
       }
     }
+  }
+
+  &__button--opened {
+    display: flex;
   }
 
   &__item {
@@ -63,7 +67,7 @@
       @include font($lexend-deca, 15px, 400, 25px);
       display: none;
       margin-top: 24px;
-      color: $benefits__title-color;
+      color: $benefit-heading;
     }
 
     &--opened {

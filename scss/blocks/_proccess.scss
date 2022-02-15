@@ -1,7 +1,4 @@
 .proccess {
-  max-width: 1440px;
-  margin: 0 auto;
-
   &__container {
     padding: 160px 20px 200px;
   }
@@ -17,7 +14,7 @@
       display: flex;
       width: 974px;
       height: 15px;
-      background-color: $header__link--mobile-color;
+      background-color: $toggle-link-color;
       position: absolute;
       top: calc(96px / 2);
       right: 300px;
@@ -46,7 +43,7 @@
         height: 96px;
         display: block;
         margin-bottom: 40px;
-        background-color: $main__button-bg;
+        background-color: $button-color;
         border-radius: 50%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -65,7 +62,7 @@
     &-description {
       @include basic-area;
       @include font($lexend-deca, 15px, 400, 25px);
-      color: $header__link-color;
+      color: $header-link-color;
     }
   }
 }
@@ -73,7 +70,7 @@
 @media only screen and (max-width: $tablet) {
   .proccess {
     &__container {
-      max-width: 728px;
+      max-width: 613px;
       padding-top: 122px;
       padding-bottom: 145px;
     }
@@ -85,7 +82,7 @@
         transform: rotate(90deg);
         position: absolute;
         top: -96px;
-        left: -385px;
+        right: calc((96px / 2) - (15px / 2));
       }
 
       &-item {
@@ -109,13 +106,12 @@
 @media only screen and (max-width: $mobile) {
   .proccess {
     &__container {
-      max-width: 688px;
+      max-width: 350px;
       padding: 120px 20px;
     }
 
     &__list {
       &-item {
-        padding: 0 32px;
         flex-direction: column;
         align-items: center;
         margin-bottom: 48px;

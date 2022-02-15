@@ -6,9 +6,8 @@
 
 body {
   @include basic-area;
-  @include font($space-mono, 15px, 700, 25px);
+  @include font($space-mono, 15px, 400, 25px);
   margin-top: 97px;
-  overflow-x  : hidden;
 }
 
 ul,
@@ -23,6 +22,7 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
+  line-height: 1;
 }
 
 @media only screen and (max-width: $mobile) {

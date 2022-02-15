@@ -1,9 +1,9 @@
 .footer {
-  background-color: $toggle__navbar-bg;
+  background-color: $toggle-navbar-color;
 
   &__container {
     @include flex-display;
-    padding: 36px 20px;
+    padding: 35px 20px 32px;
     justify-content: space-between;
   }
 
@@ -19,11 +19,11 @@
   }
 
   &__icon {
-    color: $main__button-bg;
+    color: $button-color;
     transition: .5s ease all;
 
     &:hover {
-      color: $white__color;
+      color: $white;
     }
   }
 }
@@ -37,7 +37,7 @@
 @media only screen and (max-width: $mobile) {
   .footer {
     &__container {
-      max-width: 688px;
+      max-width: 350px;
       padding: 64px 20px 88px;
       flex-direction: column;
     }
@@ -51,7 +51,6 @@
     }
 
     &__nav {
-
       & .nav__list-item {
         @include basic-area;
         margin-bottom: 16px;
@@ -66,6 +65,5 @@
         margin-bottom: 85px;
       }
     }
-
   }
 }

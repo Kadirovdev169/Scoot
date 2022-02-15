@@ -13,15 +13,15 @@
   }
 
   &__item-link {
-    color: $header__link-color;
+    color: $header-link-color;
 
     &:hover {
-      color: $main__button-bg;
+      color: $button-color;
       transition: .2s ease all;
     }
 
     &--active {
-      color: $main__button-bg;
+      color: $button-color;
     }
   }
 }
@@ -30,7 +30,11 @@
   .nav {
     &__item-link {
       font-size: 18px;
-      color: $header__link--mobile-color;
+      color: $toggle-link-color;
+
+      &--active {
+        color: $button-color;
+      }
     }
   }
 }

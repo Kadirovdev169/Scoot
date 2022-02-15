@@ -10,7 +10,7 @@
   &__title {
     @include basic-area;
     @include font($space-mono, 56px, 700, 56px);
-    color: $white__color;
+    color: $white;
   }
 }
 
