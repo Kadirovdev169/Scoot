@@ -444,10 +444,11 @@ a {
 }
 
 .main-button {
-  padding: 14px 49px;
+  padding: 14px 39px;
   color: #FFFFFF;
   background-color: #FCB72B;
   border: 3px solid transparent;
+  line-height: 25px;
   -webkit-transition: .5s ease all;
   transition: .5s ease all;
   z-index: 1;
