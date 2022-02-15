@@ -1328,12 +1328,6 @@ a {
   background-color: #FFF4DF;
 }
 
-.faqs__button--opened {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .faqs__item-title {
   margin: 0;
   padding: 0;
@@ -1377,6 +1371,27 @@ a {
   top: 42px;
   right: 42px;
   cursor: pointer;
+}
+
+.faqs__item-button-active {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 16px;
+  height: 8px;
+  border: none;
+  background-image: url(../../img/icons/arrow-bottom.svg);
+  background-color: transparent;
+  position: absolute;
+  top: 42px;
+  right: 42px;
+  cursor: pointer;
+}
+
+.faqs__item-button-active--opening {
+  background-image: url(../../img/icons/arrow-top.svg);
 }
 
 @media only screen and (max-width: 1150px) {

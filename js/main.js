@@ -24,10 +24,7 @@ nav.addEventListener("animationend", (evt) => {
   }
 })
 
-button.addEventListener("click", () => {
-  text.classList.toggle("faqs__button--opened")
-})
-
 item.addEventListener("click", () => {
   text.classList.toggle("faqs__item--opened")
+  button.classList.toggle("faqs__item-button-active--opening")
 })

@@ -51,10 +51,6 @@
     }
   }
 
-  &__button--opened {
-    display: flex;
-  }
-
   &__item {
     &-title {
       @include basic-area;
@@ -86,6 +82,24 @@
       top: 42px;
       right: 42px;
       cursor: pointer;
+    }
+
+    &-button-active {
+      @include basic-area;
+      @include basic-bg-img;
+      width: 16px;
+      height: 8px;
+      border: none;
+      background-image: url(../../img/icons/arrow-bottom.svg);
+      background-color: transparent;
+      position: absolute;
+      top: 42px;
+      right: 42px;
+      cursor: pointer;
+
+      &--opening {
+        background-image: url(../../img/icons/arrow-top.svg);
+      }
     }
   }
 }
