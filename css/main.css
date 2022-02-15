@@ -148,6 +148,28 @@ a {
   }
 }
 
+@-webkit-keyframes header-closing {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes header-closing {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -259,8 +281,8 @@ a {
   }
   .header__nav {
     display: none;
-    -webkit-animation: toggle-background .7s linear;
-            animation: toggle-background .7s linear;
+    -webkit-animation: toggle-background .5s linear;
+            animation: toggle-background .5s linear;
   }
   .header__nav--opened {
     display: -webkit-box;
@@ -296,8 +318,8 @@ a {
     top: 0;
     left: 0;
     background-color: #333A44;
-    -webkit-animation: toggle-navbar .7s linear;
-            animation: toggle-navbar .7s linear;
+    -webkit-animation: toggle-navbar .5s linear;
+            animation: toggle-navbar .5s linear;
   }
   .header__nav--opened .header__nav-list {
     margin: 0;
@@ -329,15 +351,12 @@ a {
   .header__nav--opened .nav__list-item:last-child {
     margin-bottom: 0;
   }
-  .header__nav--opened .header__item-link {
-    color: #E5ECF4;
-  }
   .header__nav--opened .header__link--active {
     color: #FCB72B;
   }
-  .header__item-link {
-    font-size: 18px;
-    color: #E5ECF4;
+  .header__nav--closing {
+    -webkit-animation: header-closing .5s linear;
+            animation: header-closing .5s linear;
   }
   .header__burger {
     display: -webkit-box;
@@ -401,6 +420,13 @@ a {
 
 .nav__item-link--active {
   color: #FCB72B;
+}
+
+@media only screen and (max-width: 729px) {
+  .nav__item-link {
+    font-size: 18px;
+    color: #E5ECF4;
+  }
 }
 
 .visually-hidden {

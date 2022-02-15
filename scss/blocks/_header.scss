@@ -44,6 +44,15 @@
   }
 }
 
+@keyframes header-closing {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -137,7 +146,7 @@
 
     &__nav {
       display: none;
-      animation: toggle-background .7s linear;
+      animation: toggle-background .5s linear;
 
       &--opened {
         @include flex-display;
@@ -160,7 +169,7 @@
           top: 0;
           left: 0;
           background-color: $toggle__navbar-bg;
-          animation: toggle-navbar .7s linear;
+          animation: toggle-navbar .5s linear;
         }
 
         & .header__nav-list {
@@ -181,19 +190,14 @@
           }
         }
 
-        & .header__item-link {
-          color: $header__link--mobile-color;
-        }
-
         & .header__link--active {
           color: $main__button-bg;
         }
       }
-    }
 
-    &__item-link {
-      font-size: 18px;
-      color: $header__link--mobile-color;
+      &--closing {
+        animation: header-closing .5s linear;
+      }
     }
 
     &__burger {

@@ -25,3 +25,12 @@
     }
   }
 }
+
+@media only screen and (max-width: $mobile) {
+  .nav {
+    &__item-link {
+      font-size: 18px;
+      color: $header__link--mobile-color;
+    }
+  }
+}
