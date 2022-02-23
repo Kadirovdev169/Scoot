@@ -492,7 +492,7 @@ a {
 
 .main-button:hover {
   color: #fcb72b;
-  background-color: #fff;
+  background-color: transparent;
   border: 3px solid #fcb72b
 }
 
@@ -1148,7 +1148,10 @@ only screen and (max-width:729px) and (min-resolution:2dppx) {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: url(../../img/cta-bg-img.jpg)
+  background: url(../../img/cta-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio:2),
@@ -1195,7 +1198,7 @@ only screen and (min-resolution:2dppx) {
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 728px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 88px 0;
     -webkit-box-orient: vertical;
@@ -1245,7 +1248,10 @@ only screen and (max-width:1150px) and (min-resolution:2dppx) {
     margin: 0 auto;
     padding: 88px 0;
     max-width: 351px;
-    background: url(../../img/cta-bg-mobile-img.jpg)
+    background: url(../../img/cta-bg-mobile-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 }
 

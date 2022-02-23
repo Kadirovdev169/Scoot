@@ -457,7 +457,7 @@ a {
 
 .main-button:hover {
   color: #FCB72B;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: 3px solid #FCB72B;
 }
 
@@ -1060,6 +1060,9 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: url(../../img/cta-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1097,6 +1100,9 @@ a {
 }
 
 @media only screen and (max-width: 1150px) {
+  .cta {
+    max-width: 768px;
+  }
   .cta__container {
     margin: 0;
     padding: 0;
@@ -1147,6 +1153,9 @@ a {
     padding: 88px 0;
     max-width: 351px;
     background: url(../../img/cta-bg-mobile-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 }
 

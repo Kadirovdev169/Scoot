@@ -20,6 +20,9 @@
     }
 
     background: url(../../img/cta-bg-img.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 
   &__description {
@@ -39,6 +42,8 @@
 
 @media only screen and (max-width: $tablet) {
   .cta {
+    max-width: 768px;
+
     &__container {
       @include basic-area;
       box-sizing: border-box;
@@ -101,6 +106,9 @@
       }
 
       background: url(../../img/cta-bg-mobile-img.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
     }
 
     &__description {
